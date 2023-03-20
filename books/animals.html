@@ -1,0 +1,105 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <meta aframe-injected name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no,minimal-ui,viewport-fit=cover">
+        <meta aframe-injected name="mobile-web-app-capable" content="yes">
+        <meta aframe-injected name="theme-color" content="black">
+        <meta aframe-injected name="apple-mobile-web-app-capable" content="yes">
+        <meta aframe-injected name="apple-mobile-web-app-status-bar-style" content="black">
+        <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            .gg{
+                color: white;
+                background-color: navy;
+            }
+            #overlay {
+                margin-left: 293px;
+                width: 20%;
+                text-align: center;
+              
+            }
+        </style>
+
+    </head>
+    <body sstyle="margin: 0; overflow: hidden;">
+
+        <div class="w3-container" style="margin-top:20px;">
+            <button id="backBtn" class="w3-btn gg w3-round w3-left w3-border w3-border-white" style="margin-left: 200px; " href="../index.html"><i class="material-icons">arrow_back</i></button>
+            <button id="playBtn" class="w3-btn gg w3-round w3-right w3-border w3-border-white" style="margin-right: 200px;" href="#"><i class="material-icons">volume_up</i></button>
+        </div>
+        <div id="overlay" class="overlay w3-card w3-round-large gg w3-border w3-border-white" >
+            <p class="w3-large"></p>
+        </div>
+        <a-scene
+            vr-mode-ui="enabled: false;"
+            loading-screen="enabled: false;"
+            renderer="logarithmicDepthBuffer: true;"
+            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+            id="scene"
+            embedded
+            gesture-detector
+        >
+            <a-assets>
+                <a-assets-item id="elephant" src="assets/elephant/scene.gltf"></a-assets-item>
+                <a-assets-item id="cheetah" src="assets/my_animated_cheetah/scene.gltf"></a-assets-item>
+                <a-assets-item id="bird" src="assets/titmouse_-_animals/scene.gltf"></a-assets-item>
+            </a-assets>
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="assets/pattern-marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA" 
+            >
+                <a-entity gltf-model="#elephant" scale="0.7 0.7 0.7"/>
+            </a-marker>
+
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="assets/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity gltf-model="#cheetah" scale="0.7 0.7 0.7"/>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+
+        <script>
+            const overlay = document.getElementById('overlay').querySelector('p');
+        
+            const markers = [
+              { url: 'assets/marker.patt', text: 'Cheetah' },
+              { url: 'assets/pattern-marker.patt', text: 'Elepahnt' }
+             
+            ];
+        
+            markers.forEach((marker) => {
+              const aMarker = document.querySelector(`a-marker[url="${marker.url}"]`);
+        
+              aMarker.addEventListener('markerFound', () => {
+                overlay.textContent = marker.text;
+                overlay.style.display = 'block';
+                // alert(marker.text);
+              });
+        
+              aMarker.addEventListener('markerLost', () => {
+                overlay.textContent = '';
+                overlay.style.display = 'none';
+                // alert("lost");
+              });
+            });
+          </script>
+    </body>
+</html>

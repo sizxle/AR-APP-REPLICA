@@ -1,0 +1,11 @@
+Model Information:
+* title:	Zulu
+* source:	https://sketchfab.com/3d-models/zulu-a1e0d4e3cdd24726bef0548357ccd795
+* author:	FedeOde (https://sketchfab.com/FedeOde)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Zulu" (https://sketchfab.com/3d-models/zulu-a1e0d4e3cdd24726bef0548357ccd795) by FedeOde (https://sketchfab.com/FedeOde) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

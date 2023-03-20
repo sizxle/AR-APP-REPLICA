@@ -1,0 +1,11 @@
+Model Information:
+* title:	Titmouse - Animals
+* source:	https://sketchfab.com/3d-models/titmouse-animals-6ce2b75341b94f68b9983182c63651c1
+* author:	Šimon Ustal (https://sketchfab.com/simonustal)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Titmouse - Animals" (https://sketchfab.com/3d-models/titmouse-animals-6ce2b75341b94f68b9983182c63651c1) by Šimon Ustal (https://sketchfab.com/simonustal) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
