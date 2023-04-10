@@ -1,0 +1,79 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <meta aframe-injected name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no,minimal-ui,viewport-fit=cover">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+
+            .gg{
+                color: white;
+                background-color: navy;
+            }
+            #overlayOne {
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(purple 67%,white);
+                position: absolute;
+                margin: 0 auto;     
+            }
+            #first{
+                width: 80%;
+                height: 40%;
+                position: absolute;
+                left: 10%;
+                bottom: 10px;
+                background-color: ghostwhite;
+                border-radius: 10px;
+            }
+            #backBtn{
+                position: relative;
+                top:6px;
+                left:5px;
+            }
+            .intro{
+                width: 100%;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                top:20%;
+            }
+            input[type="submit"]{
+                position: absolute;
+                bottom:0;
+                left:35%;
+            }
+            #google_translate_element{
+                position: absolute;
+                top:50%;
+                left:25%;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="overlayOne">
+            <div id="first">
+                <button id="backBtn" class="w3-btn gg w3-round w3-left w3-border w3-border-white" href="../index.html"><i class="material-icons">arrow_back</i></button>
+                <p class="intro">Select Language</p>
+                <div id="google_translate_element"></div>
+                <input type="submit" value="Start" class="w3-btn gg w3-round w3-left w3-border w3-border-white" />
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+        </script>
+            
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
+</html>

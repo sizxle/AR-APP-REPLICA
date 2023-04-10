@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+    background: #f5f6f7;
+  }
+  
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #e2cfe9;
+    color: #282345;
+    border-bottom: 4px solid #fe0e78;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  a img {
+    width: 100%;
+    max-width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 100px;
+  }
+  
+  .gg{
+    color: white;
+    background-color: navy;
+}
+#flashcard-selection{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+#main{
+  display: none;
+}
