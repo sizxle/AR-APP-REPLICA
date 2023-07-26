@@ -10,8 +10,8 @@ The decision to build a web-based replica of their mobile application is driven 
 - Sthembizo Molefi
 
 ## Tools
--HTML,CSS,W3.CSS
--AR.js , A-FRAME
+- HTML,CSS,W3.CSS
+- AR.js , A-FRAME
 
 
 ## Notes
