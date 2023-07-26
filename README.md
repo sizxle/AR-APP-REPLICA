@@ -9,6 +9,11 @@ The decision to build a web-based replica of their mobile application is driven 
 ## Developer
 - Sthembizo Molefi
 
+##Tools
+-HTML,CSS,W3.CSS
+-AR.js , A-FRAME
+
+
 ## Notes
 Please note that not all books have AR models available at the moment. Efforts are ongoing to acquire suitable models for those books. In the meantime, do check out the Animal book as it features some correct models.
 
